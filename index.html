@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">,
+    <meta name="author" content="Renata Rodrigues">
+    <meta name="description" content="Grão Café - Cafeteria">
+    <meta name="keywords" content="café, cafeteria, grão">
+    <link rel="stylesheet" type="text/css" href="stylesheet.css" media="screen"/>
+
+    <title>Grão Café</title>
+</head>
+<body>
+    <nav class="menu">    
+        <ul class="lista">
+            <h1 id="nome">Grão Café</h1>
+            <h2 id="slogan">único</h2>
+            <li><a href="#home" class="li">HOME</a></li>
+            <li><a href="#cardapio" class="li">CARDÁPIO</a></li>
+            <li><a href="#casa" class="li">A CASA</a></li>
+            <li><a href="#contato" class="li">CONTATO</a></li>
+        </ul>
+    </nav>
+    <section class="#home">
+        <banner "capaa.jpg" id="capa">
+    </section> 
+    <section class="cardapioo">
+        <h2 id="cardap">CARDÁPIO</h2>
+        <div class="cardapio">
+            <ul id="cardapio2">
+                <li id="li2">Americano</li>
+                <li id="li2">Caffè Latte</li>
+                <li id="li2">Capuccino</li>
+                <li id="li2">Coado</li>
+            </ul>
+        </div>
+        <div class="cardapio">    
+            <ul id="cardapio2">
+                <li id="li2">Correto</li>
+                <li id="li2">Da Casa</li>
+                <li id="li2">Espresso</li>
+                <li id="li2">Frapuccino</li>
+            </ul>
+        </div>
+        <div class="cardapio">    
+            <ul id="cardapio2">
+                <li id="li2">Irish</li>
+                <li id="li2">Machiato</li>
+                <li id="li2">Mocha</li>
+                <li id="li2">Quad</li>
+            </ul>
+        </div>    
+        <div class="cardapio">    
+            <ul id="cardapio2">
+                <li id="li2">Bolos e tortas</li>
+                <li id="li2">Cookies</li>
+                <li id="li2">Salgados</li>
+                <li id="li2">Promoções</li>
+            </ul>   
+        </div>    
+    </section>   
+    <h2 id="pedido">Faça seu pedido diretamente em nosso whatsapp</h2>
+    <h3 id="dodia">Consulte os produtos do dia</h3>
+    <section class="casa">
+        <h2 id="acasa">VITRINE</h2>
+        <div class="container">
+            <button class="arrow-left control" aria-label="Next Image">◀</button>
+            <button class="arrow-right control" aria-label="Next Image">▶</button>
+            <div class="gallery-wrapper">
+                <div class="gallery">
+                    <img class="item current-item" src="img01.jpg"/>
+                    <img class= "item" src="img02.jpg"/>
+                    <img class="item" src="img03.jpg"/>
+                    <img class="item" src="img04.jpg">
+                    <img class="item" src="img05.jpg">
+                    <img class="item" src="img06.jpg"/>
+                    <img class="item" src="img07.jpg"/>
+                    <img class="item" src="img08.jpg"/>
+                    <img class="item" src="img09.jpg"/>
+                    <img class="item" src="img10.jpg"/>
+                </div>
+            </div>
+        </div>
+        <script>
+            const controls = document.querySelectorAll(".control");
+let currentItem = 0;
+const items = document.querySelectorAll(".item");
+const maxItems = items.length;
+
+controls.forEach((control) => {
+  control.addEventListener("click", (e) => {
+    isLeft = e.target.classList.contains("arrow-left");
+
+    if (isLeft) {
+      currentItem -= 1;
+    } else {
+      currentItem += 1;
+    }
+
+    if (currentItem >= maxItems) {
+      currentItem = 0;
+    }
+
+    if (currentItem < 0) {
+      currentItem = maxItems - 1;
+    }
+
+    items.forEach((item) => item.classList.remove("current-item"));
+
+    items[currentItem].scrollIntoView({
+      behavior: "smooth",
+      inline: "center"
+    });
+
+    items[currentItem].classList.add("current-item");
+  });
+});
+        </script>    
+    </section>
+    <footer>
+        <div class="ftr">
+            <ul class="footer">
+                <li id="li3">Seja nosso parceiro</li>
+                <li id="li3">Fornecedores</li>
+                <li id="li3">Trabalhe com a gente</li>
+            </ul>
+            <p class="end">Rua dos Bobos, número 0. São Paulo - SP</p>
+        </div>
+    </footer>
+</body>
+</html>

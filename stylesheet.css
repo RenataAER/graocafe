@@ -1,0 +1,254 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@100;300&family=Poppins:wght@100;200;400&family=Stick+No+Bills:wght@500&display=swap');
+
+
+body{
+    background-color: #ede0d4;
+    height: 1500px;
+}
+
+
+.menu{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #2f0e07;
+    height: 150px;
+    width: 100%;
+}
+
+
+.lista{
+    text-decoration: none;
+    list-style: none;
+    font-size: 20pt;
+    font-family: 'Stick No Bills', sans-serif;
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 48px;
+}
+
+
+.li{
+    color: #ede0d4;
+    text-decoration: none;
+}
+
+
+.home{
+    width: 100%;
+}
+
+
+#capa{
+    width: 101.2%;
+    margin-left: -10px;
+    margin-top: 123px;
+    top: 0;
+    border-bottom: #2f0e07 solid 2px;
+}
+
+
+#nome{
+    color: #ede0d4;
+    font-family: 'Stick No Bills', sans-serif;
+    font-size: 60pt;
+    margin-top: -60px;
+    margin-left: -100px;
+    padding: 10px;
+}
+
+
+#slogan{
+    color: #ede0d4;
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 14pt;
+    margin-top: 40px;
+    margin-left: -242px;
+
+}
+
+
+.cardapioo{
+    height: 600px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+
+#cardap{
+    width: 100%;
+    margin-top: -100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Stick No Bills', sans-serif; 
+    font-size: 25pt;
+}
+
+
+.cardapio{
+    margin-top: -150px;
+}
+
+#cardapio2{
+    padding: 10px;
+}
+
+
+#li2{
+    text-decoration: none;
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-weight: bolder;
+    font-size: 14pt;
+
+}
+
+#pedido{
+    margin-top: -250px;
+    display: flex;
+    justify-content: center;
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 15pt;
+}
+
+
+#dodia{
+    margin-top: -10px;
+    display: flex;
+    justify-content: center;
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 13pt;
+}
+
+
+.casa{
+    width: 100%;
+    background-color: #ede0d4;
+
+   
+}
+
+
+.container{
+    position: relative;
+    padding: 15px;
+    max-width: 640px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+
+
+.gallery-wrapper {
+    overflow-x: auto;
+  }
+  
+  .arrow-left,
+  .arrow-right {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: auto;
+    bottom: 0;
+    font-size: 20px;
+    line-height: 250px;
+    width: 40px;
+    color: #fff;
+    transition: all 600ms ease-in-out;
+    background: linear-gradient(to left, transparent 0%, #ede0d4 200%);
+    opacity: 0.1;
+    cursor: pointer;
+    border: none;
+  }
+  
+  .arrow-left:hover,
+  .arrow-right:hover {
+    opacity: 1;
+  }
+  
+  .arrow-right {
+    right: 0;
+    left: auto;
+    text-align: right;
+    background: linear-gradient(to right, transparent 0%, #ede0d4 200%);
+  }
+  
+  .gallery {
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 15px;
+  }
+  
+  .item {
+    width: 280px;
+    height: 250px;
+    flex-shrink: 0;
+    transition: all 600ms ease-in-out;
+    opacity: 0.5;
+  }
+  
+  .current-item {
+    opacity: 1;
+  }
+
+  .gallery-wrapper::-webkit-scrollbar {
+    display: none;
+  }
+
+
+
+#acasa{
+    width: 100%;
+    margin-top: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Stick No Bills', sans-serif; 
+    font-size: 25pt;
+    }
+
+
+.ftr{
+    width: 101.2%;
+    height: 120px;
+    background-color: #2f0e07;
+    margin-left: -10px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.footer{
+    text-decoration: none;
+    list-style: none;
+    font-size: 12pt;
+    font-family: 'Montserrat Alternates', sans-serif;
+    color: #ede0d4;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+
+
+#li3{
+    display: flex;
+    justify-content: center;
+    margin-left: 200px;
+    margin-top: 15px;
+
+}
+
+
+.end{
+    color: #ede0d4;
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-weight: lighter;
+    font-size: 10pt;
+    display: flex;
+    justify-content: center;
+    margin-top: 95px;
+    margin-left: -600px;
+}
